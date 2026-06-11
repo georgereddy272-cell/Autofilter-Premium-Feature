@@ -18,9 +18,9 @@ def is_enabled(value, default):
 # Bot Information Configuration
 # ============================
 SESSION = environ.get('SESSION', 'royal_search')   # Session name for the bot
-API_ID = int(environ.get('API_ID', '')) # API ID from my.telegram.org
-API_HASH = environ.get('API_HASH', '')  # API Hash from my.telegram.org
-BOT_TOKEN = environ.get('BOT_TOKEN', "")    # Bot token from @BotFather
+API_ID = int(environ.get('API_ID', '36291506')) # API ID from my.telegram.org
+API_HASH = environ.get('API_HASH', 'f42c7c900993420a1d9c9b4a9722d209')  # API Hash from my.telegram.org
+BOT_TOKEN = environ.get('BOT_TOKEN', "8379078532:AAEjjbMqfBSXrissejUWhwJUb-LyYVEm-fs")    # Bot token from @BotFather
 
 # ============================
 # Bot Settings Configuration
@@ -41,7 +41,7 @@ FSUB_PICS = (environ.get('FSUB_PICS', 'https://graph.org/file/7478ff3eac37f4329c
 # ============================
 # Admin, Channels & Users Configuration
 # ============================
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()] # Replace with the actual admin ID(s) to add
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8634263734').split()] # Replace with the actual admin ID(s) to add
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-100').split()]  # Channel id for auto indexing (make sure bot is admin)
 
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-100'))  # Log channel id (make sure bot is admin)
@@ -73,13 +73,13 @@ STAR_PREMIUM_PLANS = {
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "")  # MongoDB URI for the database
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Koushik:Koushik@cluster0.grt2fod.mongodb.net/?appName=Cluster0")  # MongoDB URI for the database
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0") # Database name (default: cluster)
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'royal_files') # Collection name (default: dreamcinezone_files)
+COLLECTION_NAME = environ.get('Official_HDL', 'royal_files') # Collection name (default: dreamcinezone_files)
 
 # If MULTIPLE_DB Is True Then Fill DATABASE_URI2 Value Else You Will Get Error.
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False) # Type True For Turn On MULTIPLE DB FUNTION 
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")  # MongoDB URI for the second database (if MULTIPLE_DB is True)
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Koushik:Koushik@cluster0.grt2fod.mongodb.net/?appName=Cluster0")  # MongoDB URI for the second database (if MULTIPLE_DB is True)
 # ============================
 # Movie Notification & Update Settings
 # ============================
@@ -100,9 +100,9 @@ LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-100')) #Verification Channe
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-100')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
 
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/technokrrish")   # Tutorial link for verification
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/technokrrish")   # Second tutorial link for verification
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/technokrrish")   # Third tutorial link for verification
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/TeluguMoviesHDL")  # Fist tutorialrial link for verification
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/TeluguMoviesHDL")   # Second tutorial link for verification
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/TeluguMoviesHDL")   # Third tutorial link for verification
 
 # Verification (Must Fill All Veriables. Else You Got Error
 SHORTENER_API = environ.get("SHORTENER_API", "2469484d258897da1dc9edaf4face6f466301f39") # Shortener API key
@@ -120,8 +120,8 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/technokrrish') # Group link for the bot
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/technokrrishyt') # Owner link for the bot
+GRP_LNK = environ.get('GRP_LNK', 'https://'https://t.me/MoviesFastlink') # Group link for the bot
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Official_HDL') # Owner link for the bot
 UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/ip_update') # Update channel link for the bot
 
 # ============================
@@ -211,13 +211,13 @@ if 'DYNO' in environ:
 else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else "https://{}/".format(FQDN, PORT)
+FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.'
+URL = "https://{https://t.me/Official_HDL}/".format(FQDN) if ON_HEROKU or NO_PORT else "https://{https://t.me/TeluguMoviesHDL}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
-SESSION_NAME = str(environ.get('SESSION_NAME', 'dreamXBotz'))
+SESSION_NAME = str(environ.get('SESSION_NAME', 'Official_HDL'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'DREAMXBOTZ'))
+name = str(environ.get('name', 'HDL_Official'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
